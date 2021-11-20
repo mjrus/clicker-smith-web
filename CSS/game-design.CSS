@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+html, body{
+    min-width: 1280px;
+    min-height: 720px;
+    
+    background: #000;
+    
+    padding: 0;
+    margin: 0;
+}
+div, input{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 26px;
+}
+
+#menuBar{
+    float: left;
+    
+    height: 100%;
+    width: 10%;
+    
+    background: #FF482A;
+}
+#gamePanel{
+    float: left;
+    
+    width: 30%;
+    height: 100%;
+    
+    background: #2B2A27;
+}
+#swordTitleContainer{
+    width:100%;
+    height: 30%;
+    
+    background-color: rbga(0,0,0,0.25);
+  
+}
+#swordTitleBox{
+    width:60%;
+    height:70%;
+    position: relative;
+    top:15%;
+    left:20%;
+    
+}
+#swordTitleText{
+    width:100%;
+    height:50%;
+    font-size: 30px;
+
+    color: white;
+    opacity: 1;
+}
+#swordProgress{
+    width:100%;
+    height:50%;
+    font-size: 42px;
+    color: white
+}
+#anvil{
+    width: 50%;
+    height: 40%;
+    
+    background: #3B3A37;
+    
+    position: relative;
+    
+    top: 15%;
+    left: 25%;
+}
+.forgeCursor{
+    cursor: url(../Image/Cursor_ForgeHammer.png), auto;
+}
+#swordMenu{
+    background: #F1F1D4;
+    width : 90%;
+    height: 90%;
+    z-index: 1;
+    position: fixed;
+    top:5%;
+    left:5%;
+    display: none;
+    box-sizing: border-box;
+    border-width: 10px;
+    border-color: #935823;
+    border-style:groove;
+}
+#swordMenuLeft{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 10px inset #935823;
+    float: left;
+}
+#swordName{
+    width: 100%;
+    height: 10%;
+    
+    text-align: center;
+    line-height: 1.25;
+    
+    background:#F1F1D4; 
+    color:#903;
+    font-size: 48px;
+    float: left;
+}
+#swordInfoContainer{
+    width:100%;
+    height: 10%;
+    float: left;
+    position: relative;
+    top: 20%;
+}
+.swordInfo{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.swordInfoText{
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 36px;
+    text-align: center;
+    line-height: 2;
+    color:#903;
+    background: #F1F1D4 ;
+    float: left
+}
+.swordInfoAmount{
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    border-width:5px;
+    border-style: groove;
+    border-color: #AA9200;
+    text-align: center;
+    line-height: 2;
+    background: #F1F1D4;
+    color: #903;
+    font-size: 36px;
+    float: left;
+}
+#playerInfoContainer{
+    width: 100%;
+    height: 30%;
+    float: left;
+    background: #F1F1D4 ; 
+    position: relative;
+    top:30%;
+}
+#playerLvlContainer{
+    width: 15%;
+    height: 100%;
+    border: 5px double #333;
+    box-sizing: border-box;
+    float:left;
+    position: relative;
+    left:5%;
+}
+#playerLvlText{
+    height: 40%;
+    width: 100%;
+    float:left;
+    font-size: auto;
+    text-align: center;
+    font-size: 36px;
+    line-height: 2;
+}
+#playerLvl{
+    height: 60%;
+    width: 100%;
+    float: left;
+    padding-top: 30%;
+    font-size: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 2px dashed #333;
+}
+#playerXpContainer{
+    width:45%;
+    position: relative;
+    float: left;
+    left: 10%;
+    height: 100%;
+    border: 5px double #333;
+    box-sizing: border-box;
+}
+#playerXpCount{
+    height: 80%;
+    width: 100%;
+    float: left;
+    font-size: 60px;
+     box-sizing: border-box ;
+    border-bottom: 2px dashed #333;
+    text-align: center;
+    padding-top:20%; 
+}
+#playerXpBar{
+    height: 20%;
+    width:0%;
+    background: #7852A9;
+    float:left;
+}
+#playerXpEarnedContainer{
+    height: 100%;
+    width: 20%;
+    float: left;
+    position: relative;
+    left: 15%;
+    box-sizing: border-box;
+    border: 5px double #333;
+}
+#playerXpEarnedAmount{
+    height: 60%;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    border-bottom: 2px dashed #333;
+    font-size: 72px;
+    padding-top: 10%;
+    text-align: center;
+}
+#playerXpEarnedText{
+    height: 40%;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    font-size: 36px;
+    text-align: center;
+}
+#swordMenuRight{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    background: #F1F1D4; 
+}
+#materialContainer{
+    width:100%;
+    height:40%;
+    box-sizing: border-box;
+    float: left;
+    background: #F1F1D4;
+}
+#swordTypeContainer{
+    width:100%;
+    height:40%;
+    box-sizing: border-box;
+    float: left;
+    background: #F1F1D4;
+}
+.card{
+    width: 20%;
+    height: 80%;
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background: #F1F1D4;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    color:#903;
+}
+.cardName{
+    width: 100%;
+    
+
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    height: 20%;
+    box-sizing:padding-box;
+    
+    text-align: center;
+}
+.cardImg{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10%;
+    box-sizing: padding-box;
+}
+.cardChoose{
+    width: 100%;
+    height: 20%;
+    box-sizing: padding-box;
+    margin-top: 10%;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif; 
+    color: #903;
+}
+.selected{
+    background: #ebadad;
+}
+#submitSword{
+    width: 30%;
+    height:15%;
+    position: relative;
+    left:35%;
+    font-size: 36px;
+}
+#upgradeContainer{
+    width:60%;
+    height: 100%;
+    float: left;
+}
+.sidePanel{
+    height: 100%;
+    width: 5%;
+    background:  #6F4A1D;
+    float: left;
+    
+}
+#upgradeHolder{
+    width: 90%;
+    float: left;
+    height: 100%;
+}
+.upgradeStatPanel{
+    height: 30%;
+    width: 100%;
+    background: #D7B27E;
+}
+.upgradeTownPanel{
+    height: 30%;
+    width: 100%;
+    background: #D7B27E;
+}
+.crossPanel{
+    height: 2.5%;
+    width: 100%;
+    background: #6f4a1d;
+}
+#unusedLvls{
+    height: 100%;
+    width:25%;
+    float: left;
+    box-sizing: border-box;
+    border: 5px double #333;
+    margin-right: 2.5%;
+}
+#lvlAmount{
+    width: 100%;
+    height:70%;
+    color: #333;
+    font-size: 120px;
+    text-align: center;
+    padding-top: 17.5%;
+    box-sizing: border-box;
+    border-bottom: 2px dashed #333;
+}
+#lvlText{
+    width:100%;
+    height:30%;
+    box-sizing: border-box;
+    font-size: 36px;
+    text-align: center;
+  
+    color: #333;
+}
+.upgradeStat{
+    margin-left: 2.5%;
+    margin-right: 5%;
+    width:15%;
+    height:50%;
+    float:left;
+    box-sizing: border-box;
+    border: 5px double #333;
+}
+.upgradeTown{
+    margin-left: 2.5%;
+    margin-right: 5%;
+    width:15%;
+    height:100%;
+    float:left;
+    box-sizing: border-box;
+    border: 5px double #333;
+}
+.statLvl{
+    width:50%;
+    height:20%;
+    font-size: 18px;
+    color: #333;
+    box-sizing: border-box;
+    border: 1px dashed #333;
+    border-top-style: none;
+    position: relative;
+    left: 25%;
+    text-align: center;
+}
+.statName{
+    width:100%;
+    height: 20%;
+    float: left;
+    color:#333;
+    box-sizing: border-box;
+    position: relative;
+    top:10%;
+    font-size: 24px;
+    text-align: center;
+}
+.statButton{
+    width: 60%;
+    height: 20%;
+    float: left;
+    color: #333;
+    text-align: center;
+    box-sizing:border-box;
+    position: relative;
+    top: 30%;
+    left:20%;
+}
+#goldContainer{
+    width: 25%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    border: 5px double #333;
+    margin-right: 2.5%;
+}
+#goldAmount{
+    width:100%;
+    text-align: center;
+    height: 75%;
+    font-size: 36px;
+    box-sizing: border-box;
+    border-bottom: 2px dashed #333;
+    padding-top: 35%;
+}
+#goldText{
+    width:100%;
+    text-align: center;
+    height: 25%;
+    font-size: 30px;
+    padding-top: 7.5%;
+}

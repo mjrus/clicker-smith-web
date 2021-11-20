@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="JS/game-logic.JS"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/game-design.CSS">
+    </head>
+    <body lang="en" onload="load()">
+        <div id = "swordMenu">
+            <div id = "swordMenuLeft">
+                <div id = "swordName"></div>
+                <div id = "swordInfoContainer">
+                    <div class = "swordInfo">
+                        <div class ="swordInfoText">Times clicked</div>
+                        <div id = "swordClick" class = "swordInfoAmount"></div>
+                    </div>
+                    <div class = "swordInfo">
+                        <div class ="swordInfoText">Earned</div>
+                        <div id = "swordGold" class = "swordInfoAmount"></div>
+                    </div>
+                </div>
+                <div id = "playerInfoContainer">
+                    <div id = "playerLvlContainer">
+                         <div id = "playerLvl"></div>
+                        <div id = "playerLvlText">Level</div>
+                    </div>
+                    <div id = "playerXpContainer">
+                        <div id = "playerXpCount"></div>
+                        <div id = "playerXpBar"></div>
+                    </div>
+                    <div id = "playerXpEarnedContainer">
+                        <div id = "playerXpEarnedAmount"></div>
+                        <div id = "playerXpEarnedText">Exp Earned</div>
+                    </div>
+                </div>
+            </div>
+            <div id = "swordMenuRight">
+                <div id = "menuTitle">Pick your new sword to smith</div>
+                <div id  = "materialContainer"></div>
+                <div id = "swordTypeContainer"></div>
+                <input id = "submitSword" type ="button" onclick="addSword()" value = "Accept!">
+            </div>
+        </div>
+        <div id = "menuBar">
+            <div id = "shopPanel" class = "menuOption"></div>
+            <div id = "upgradePanel" class = "menuOption"></div>
+            <div id = "statPanel" class = "menuOption"></div>
+        </div>
+        <div id = "gamePanel">
+            <div id = "swordTitleContainer">
+                <div id = "swordTitleBox">
+                    <div id = "swordTitleText"></div>
+                    <div id = "swordProgress"></div>
+                </div>
+            </div>
+            <div id = "anvil" onmouseover ="addHammer()"></div>
+        </div>
+        <div id = "upgradeContainer">
+            <div class = 'sidePanel'></div>
+            <div id = "upgradeHolder">
+                <div class = "crossPanel"></div>
+                <div class = "upgradeStatPanel" id = "statPanel">
+                    <div id = "unusedLvls">
+                        <div id = "lvlAmount"></div>
+                        <div id = "lvlText">Unspent Points</div>
+                    </div>
+                    <div class = "upgradeStat" id = "Strength">
+                        <div class = "statLvl"></div>
+                        <div class = "statName">Strength</div>
+                        <input type = "button" class = "statButton">
+                    </div>
+                    <div class = "upgradeStat" id = "accuracy">
+                        <div class = "statLvl"></div>
+                        <div class = "statName">Accuracy</div>
+                        <input type = "button" class = "statButton">
+                    </div>
+                    <div class = "upgradeStat" id = "stamina">
+                        <div class = "statLvl"></div>
+                        <div class = "statName">Stamina</div>
+                       <input type = "button" class = "statButton">
+                    </div>
+                    <div class = "upgradeStat" id = "speed">
+                        <div class = "statLvl"></div>
+                        <div class = "statName">Speed</div>
+                        <input type = "button" class = "statButton">
+                    </div>
+                    <div class = "upgradeStat" id = "skill">
+                        <div class = "statLvl"></div>
+                        <div class = "statName">Skill</div>
+                        <input type = "button" class = "statButton">
+                    </div>
+                    <div class = "upgradeStat" id = "charisma">
+                        <div class = "statLvl"></div>
+                        <div class = "statName">Charisma</div>
+                       <input type = "button" class = "statButton">
+                    </div>
+                    
+                </div>
+                <div class = "crossPanel"></div>
+                <div class = "upgradeTownPanel">
+                    <div id = "goldContainer">
+                        <div id = "goldAmount"></div>
+                        <div id = "goldText">Curernt gold</div>
+                    </div>
+                    <div class = "upgradeTown" id = "mine">
+                        <div class = "statLvl"></div>
+                        <div class = "statName">mine</div>
+                       <input type = "button" class = "statButton" value ="">
+                    </div>
+                    <div class = "upgradeTown" id = "merchant">
+                        <div class = "statLvl"></div>
+                        <div class = "statName">merchant</div>
+                       <input type = "button" class = "statButton">
+                    </div>
+                    <div class = "upgradeTown" id = "researcher">
+                        <div class = "statLvl"></div>
+                        <div class = "statName">researcher</div>
+                       <input type = "button" class = "statButton">
+                    </div>
+                </div>
+                <div class = "crossPanel"></div>
+                <div class = "upgradePanel"></div>
+                <div class = "crossPanel"></div>
+            </div>
+            <div class = "sidePanel"></div>
+        </div>
+    </body>
+</html>
